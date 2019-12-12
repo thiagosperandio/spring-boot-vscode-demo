@@ -10,11 +10,10 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 public class SampleController {
-@GetMapping("/sample")
-public ResponseEntity<String> get() {
-		var a = new String("hello man");
+    @GetMapping("/sample")
+    public ResponseEntity<String> get() {
+        var a = new String("hello man");
         return new ResponseEntity<String>(a, HttpStatus.OK);
-}
-
+    }
 
 }
